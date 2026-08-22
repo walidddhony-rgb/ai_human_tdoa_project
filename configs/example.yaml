@@ -1,0 +1,34 @@
+# Example configuration for running simulations with run_custom.py
+# يمكنك تعديل القيم أدناه ثم تمرير الملف عبر:
+#   python run_custom.py --config configs/example.yaml --name my_sweep
+
+# مدة الإشارة بالثواني
+duration_seconds: 0.05
+
+# عدد نقاط الحساب العددي (يزيد الدقة لكنه يبطئ التنفيذ)
+numerical_points: 40000
+
+# نطاق التأخير الحقيقي (ثواني)
+min_true_delay_seconds: 2e-06
+max_true_delay_seconds: 25e-06
+
+# نطاق البحث عن التأخير (ثواني)
+min_search_delay_seconds: 0.0
+max_search_delay_seconds: 30e-06
+search_points: 601
+
+# عدد التجارب (كل تجربة تولد true_delay عشوائي ضمن النطاق)
+trials: 100
+
+# إعدادات القنوات (الكسب والانحراف المعياري للضوضاء)
+channel_1_gain: 1.0
+channel_2_gain: 0.95
+channel_1_noise_std: 0.03
+channel_2_noise_std: 0.03
+
+# خيارات البحث والتحسين
+fit_gain: false
+refine_minimum: true
+
+# للتحكم بالعشوائية (اجعلها ثابتة لإعادة إنتاج النتائج)
+random_seed: 42
