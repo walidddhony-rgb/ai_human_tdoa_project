@@ -1,0 +1,4 @@
+channel_2_gain,noise_std,mean_distance_error_mm,failure_rate_above_1mm_percent,percentile_95_distance_error_mm,trials_count
+0.95,0.03,0.450000,2.00,1.200000,100
+0.90,0.05,1.500000,25.00,3.100000,100
+1.00,0.01,0.150000,0.00,0.400000,100
